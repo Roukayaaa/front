@@ -21,12 +21,13 @@ const ProductList = () => {
 
     const [selectedType, setSelectedType] = useState('all');
  
-
+    var count=0
     useEffect(() => {
 
         setSortedProducts([...products])
 
-    })
+    },[count])
+    
  
 
     const handleSortByPrice = () => {
