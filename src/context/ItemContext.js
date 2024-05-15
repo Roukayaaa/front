@@ -21,6 +21,10 @@ function CustomItemContext({ children }) {
     const [itemsInCart, setItemsInCart] = useState(0);
 
     const [totalPrice, setTotalPrice] = useState(0)
+    var count=0
+    useEffect(()=>{
+        setProducts([])
+    },[count])
  
 
     // useEffect to load all the vegetables
