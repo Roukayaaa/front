@@ -26,7 +26,7 @@ const ProductList = () => {
 
         setSortedProducts([...products])
 
-    }, [products])
+    })
  
 
     const handleSortByPrice = () => {
